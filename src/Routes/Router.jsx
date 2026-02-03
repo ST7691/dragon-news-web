@@ -18,7 +18,9 @@ export const router = createBrowserRouter([
     loader:()=>fetch('/news.json').then(res=>res.json())
   },
     
-   ]
+   ],
   },
-
+{
+  path:'*/',element:<h1>error 404</h1>
+}
 ]);
